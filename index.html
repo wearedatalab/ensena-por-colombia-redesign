@@ -11,11 +11,11 @@
 <meta property="og:locale" content="es_CO">
 <meta property="og:title" content="Enseña por Colombia">
 <meta property="og:description" content="Liderazgo colectivo para una educación de calidad en Colombia. Parte de la red global Teach For All.">
-<meta property="og:image" content="img/hero.webp">
+<meta property="og:image" content="img/foto-aula.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/hero-640.webp" imagesrcset="img/hero-640.webp 640w, img/hero.webp 1200w" imagesizes="(min-width: 960px) 50vw, 100vw">
+<link rel="preload" as="image" href="img/foto-aula-480.webp" imagesrcset="img/foto-aula-480.webp 480w, img/foto-aula.webp 720w" imagesizes="(min-width: 960px) 45vw, 100vw">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -143,11 +143,11 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
 .trust{display:flex;align-items:center;gap:12px;font-size:.9375rem;color:var(--text-muted);margin:0}
 .trust svg{width:28px;height:28px;flex:none}
 .hero-art{position:relative}
-.hero-art img{border-radius:var(--radius-lg);box-shadow:0 24px 60px rgba(17,28,64,.22);aspect-ratio:1200/914;object-fit:cover;width:100%}
-.hero-art .stamp{position:absolute;left:-12px;bottom:24px;background:var(--navy-800);color:var(--white);border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow);max-width:230px}
+.hero-art img{border-radius:var(--radius-lg);box-shadow:0 24px 60px rgba(17,28,64,.22);aspect-ratio:3/2;object-fit:cover;width:100%}
+.hero-art .stamp{position:absolute;right:-12px;bottom:-24px;background:var(--navy-800);color:var(--white);border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow);max-width:230px}
 .hero-art .stamp strong{display:block;font:800 1.75rem/1 var(--ff-head);color:var(--yellow-500)}
 .hero-art .stamp span{font-size:.875rem}
-@media (max-width:480px){.hero-art .stamp{left:12px;bottom:12px;padding:10px 14px}.hero-art .stamp strong{font-size:1.4rem}}
+@media (max-width:480px){.hero-art .stamp{right:8px;bottom:-20px;padding:10px 14px}.hero-art .stamp strong{font-size:1.4rem}}
 
 /* Cifras */
 .impact{background:var(--navy-800);color:var(--white);position:relative;overflow:hidden}
@@ -166,7 +166,7 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
 /* Quiénes somos */
 .about{display:grid;gap:40px;align-items:center}
 @media (min-width:960px){.about{grid-template-columns:1fr 1.1fr;gap:72px}}
-.about-art img{border-radius:var(--radius-lg);aspect-ratio:4/3;object-fit:cover;width:100%}
+.about-art img{border-radius:var(--radius-lg);aspect-ratio:3/2;object-position:50% 35%;object-fit:cover;width:100%}
 .pillars{display:grid;gap:12px;list-style:none;padding:0;margin:24px 0 32px}
 @media (min-width:600px){.pillars{grid-template-columns:repeat(2,1fr)}}
 .pillars li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border-radius:var(--radius);padding:16px}
@@ -192,7 +192,7 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
 .card .more svg{width:18px;height:18px;transition:transform .18s}
 .card .more:hover svg{transform:translateX(4px)}
 .card-feature{grid-row:span 2}
-.card-feature img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card-feature img{aspect-ratio:3/2;object-fit:cover;width:100%}
 .card-feature .card-body{gap:12px}
 .card-mini{flex-direction:row;align-items:stretch}
 .card-mini .mark{flex:none;width:88px;display:grid;place-items:center;background:var(--navy-800)}
@@ -202,7 +202,7 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
 
 /* Territorio */
 .territory{position:relative;color:var(--white);background:var(--navy-900);overflow:hidden}
-.territory picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6}
+.territory picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
 .territory::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,28,64,.96) 0%,rgba(17,28,64,.88) 50%,rgba(17,28,64,.35) 100%)}
 .territory .container{position:relative;z-index:1}
 .territory h2{color:var(--white)}
@@ -223,7 +223,7 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
 .donate h2{color:var(--navy-900)}
 .donate p{color:var(--navy-900)}
 .donate .eyebrow{color:var(--navy-900)}
-.donate img{border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover;width:100%;box-shadow:0 18px 40px rgba(17,28,64,.2)}
+.donate img{border-radius:var(--radius);aspect-ratio:2/1;object-fit:cover;width:100%;box-shadow:0 18px 40px rgba(17,28,64,.2)}
 .donate .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
 .donate .btn-primary{background:var(--navy-800);box-shadow:none}
 .donate .btn-primary:hover{background:var(--navy-900)}
@@ -369,7 +369,7 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
         </p>
       </div>
       <div class="hero-art">
-        <img src="img/hero.webp" srcset="img/hero-640.webp 640w, img/hero.webp 1200w" sizes="(min-width: 960px) 50vw, 100vw" width="1200" height="914" alt="Ilustración de una profesora sonriendo junto a niñas y niños en un aula colorida." fetchpriority="high">
+        <img src="img/foto-aula.webp" srcset="img/foto-aula-480.webp 480w, img/foto-aula.webp 720w" sizes="(min-width: 960px) 45vw, 100vw" width="720" height="480" alt="Una profesora de Enseña por Colombia sonríe frente a sus estudiantes en el aula." fetchpriority="high">
         <div class="stamp"><strong>12 años</strong><span>construyendo un país más equitativo desde la educación</span></div>
       </div>
     </div>
@@ -400,7 +400,7 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
   <section class="section" aria-labelledby="somos-title">
     <div class="container about">
       <div class="about-art reveal">
-        <img src="img/liderazgo.webp" srcset="img/liderazgo-640.webp 640w, img/liderazgo.webp 900w" sizes="(min-width: 960px) 45vw, 100vw" width="900" height="675" loading="lazy" decoding="async" alt="Ilustración de docentes, estudiantes y familias uniendo sus manos alrededor de una idea luminosa.">
+        <img src="img/foto-comunidad.webp" srcset="img/foto-comunidad-640.webp 640w, img/foto-comunidad.webp 1280w" sizes="(min-width: 960px) 45vw, 100vw" width="1280" height="480" loading="lazy" decoding="async" alt="Foto grupal de la comunidad de Enseña por Colombia en un encuentro.">
       </div>
       <div class="reveal">
         <span class="eyebrow">Quiénes somos</span>
@@ -428,7 +428,7 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
       </div>
       <div class="prog-grid">
         <article class="card card-feature reveal">
-          <img src="img/lidera.webp" srcset="img/lidera-640.webp 640w, img/lidera.webp 900w" sizes="(min-width: 960px) 55vw, 100vw" width="900" height="675" loading="lazy" decoding="async" alt="Ilustración de un joven profesional caminando desde la ciudad hacia una escuela rural en las montañas.">
+          <img src="img/foto-lidera.webp" srcset="img/foto-lidera-480.webp 480w, img/foto-lidera.webp 720w" sizes="(min-width: 960px) 55vw, 100vw" width="720" height="480" loading="lazy" decoding="async" alt="Un profesor del programa LIDERA acompaña a sus estudiantes mientras trabajan en clase.">
           <div class="card-body">
             <span class="tag pink">Para profesionales</span>
             <h3>LIDERA: Enseñar para transformar</h3>
@@ -461,8 +461,8 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
   <!-- Territorio -->
   <section class="territory section" aria-labelledby="terr-title">
     <picture>
-      <source media="(max-width: 640px)" srcset="img/territorio-640.webp">
-      <img src="img/territorio.webp" width="1200" height="686" loading="lazy" decoding="async" alt="">
+      <source media="(max-width: 640px)" srcset="img/foto-red-640.webp">
+      <img src="img/foto-red.webp" width="1280" height="480" loading="lazy" decoding="async" alt="">
     </picture>
     <div class="container">
       <div class="reveal">
@@ -504,7 +504,7 @@ p{margin:0 0 1em;max-width:65ch;text-wrap:pretty}
           <a class="btn btn-ghost" href="https://ensenaporcolombia.org/haz-parte/aliados/">Sé un aliado</a>
         </div>
       </div>
-      <img src="img/donar.webp" srcset="img/donar-640.webp 640w, img/donar.webp 900w" sizes="(min-width: 960px) 40vw, 100vw" width="900" height="675" loading="lazy" decoding="async" alt="Ilustración de muchas manos diversas sosteniendo una escuela con un corazón encima.">
+      <img src="img/foto-estudiantes.webp" srcset="img/foto-estudiantes-640.webp 640w, img/foto-estudiantes.webp 960w" sizes="(min-width: 960px) 40vw, 100vw" width="960" height="480" loading="lazy" decoding="async" alt="Cinco estudiantes con uniforme escolar sonríen abrazados.">
     </div>
   </section>
 
